@@ -3,7 +3,9 @@
 
 import requests
 
-url = "https://software-defect-classifier.onrender.com"
+url = "code-defect-classifier.onrender.com"
+
+url = f'http://{host}/predict'
 
 code_params = {
     "loc": 33.0, 
