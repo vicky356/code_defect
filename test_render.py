@@ -3,7 +3,7 @@
 
 import requests
 
-url = "code-defect-classifier.onrender.com"
+host = "code-defect-classifier.onrender.com"
 
 url = f'http://{host}/predict'
 
