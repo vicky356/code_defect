@@ -39,6 +39,7 @@ After ensuring the model runs fine locally with flask, proceed to deploy the mod
   - ``` pipenv shell ```
 * Build docker image:
   -  ``` docker build -t project1 . ````
+
 * Run docker image:
   - ``` docker run -it --rm -p 9696:9696 project1 ```
 
@@ -60,3 +61,4 @@ Render was used for cloud deployment.
 - Run test file:
   - ``` pipenv shell ```
   - ``` python test_render.py ```
+![alt text](/docker.png)
