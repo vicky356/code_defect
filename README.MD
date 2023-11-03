@@ -38,16 +38,16 @@ After ensuring the model runs fine locally with flask, proceed to deploy the mod
   - ``` pipenv install ```
   - ``` pipenv shell ```
 * Build docker image:
-  - docker build -t project1 .
+  -  ``` docker build -t project1 . ````
 * Run docker image:
-  - docker run -it --rm -p 9696:9696 project1 
+  - ``` docker run -it --rm -p 9696:9696 project1 ```
 
 Having successfully run the above, activate another virtual environment for running the test file as follows:
   - ``` python test.py ```
 
 ## Test model from already deployed cloud service via render
 * activate virtual environment
-* Run test file (test_render.py) for render containing [service link](code-defect-classifier.onrender.com) as host:
+* Run test file (test_render.py) for render containing 'code-defect-classifier.onrender.com' as host:
   - ``` python test_render.py ```
 
 ## Deploy model to the cloud
