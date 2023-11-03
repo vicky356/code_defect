@@ -38,14 +38,14 @@ After ensuring the model runs fine locally with flask, proceed to deploy the mod
   - ``` pipenv install ```
   - ``` pipenv shell ```
 * Build docker image:
-  -  ``` docker build -t project1 . ````
+  -  ``` docker build -t project1 . ```
 
-![alt text]('/docker build image.png')
+![alt text](/docker build image.png)
 
 * Run docker image:
   - ``` docker run -it --rm -p 9696:9696 project1 ```
 
-![alt text]('/docker.png')
+![alt text](/docker.png)
 
 Having successfully run the above, activate another virtual environment for running the test file as follows:
   - ``` python test.py ```
@@ -67,4 +67,4 @@ Render was used for cloud deployment.
   - ``` python test_render.py ```
 
 
-![alt text]('/render deploy.png')
+![alt text](/render deploy.png)
