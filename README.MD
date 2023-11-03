@@ -40,7 +40,7 @@ After ensuring the model runs fine locally with flask, proceed to deploy the mod
 * Build docker image:
   -  ``` docker build -t project1 . ```
 
-![alt text](/docker build image.png)
+![alt text](/docker_build_image.png)
 
 * Run docker image:
   - ``` docker run -it --rm -p 9696:9696 project1 ```
@@ -67,4 +67,4 @@ Render was used for cloud deployment.
   - ``` python test_render.py ```
 
 
-![alt text](/render deploy.png)
+![alt text](/render_deploy.png)
