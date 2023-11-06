@@ -21,23 +21,22 @@ The dataset for this competition (both train and test) was generated from a deep
 * Trained data using 3 different models, xgboost presented the best accuracy score
 * The model got turned into a webservice using Flask
 
-## Deploy Model Locally with Flask
+##  To deploy Model Locally with Flask (You do not need this step to test the deployed service on render)
 * create virtual environment from pipfile and pipfilelock folders running command below:
   - ``` pipenv install ```
-* Activate shell  
+  * Activate shell  
   - ``` pipenv shell ``` 
-* Run service app (predict.py) in virtual environment
- - ``` python predict.py ``` OR ``` pipenv run python predict.py ```
-* Run test file in a sepearate virtual environment terminal (test.py)
+The above line of code is meant to install all required dependencies listed in the pipfiles in a virtual environment, these can also be installed directly by running:
+    - - ``` pip install name_of_package ```
 
+* Run service app (predict.py) in virtual environment
+ - ``` python predict.py ``` OR ``` pipenv run python predict.py ``` (if using virtual environment)
+* Run test file in a sepearate virtual environment terminal (test.py)
+  - ``` python test.py ```
 
 ## Deploying Model Locally with Docker
-After ensuring the model runs fine locally with flask, proceed to deploy the model on docker and build image as follows:
 * Install and run docker on local machine
-* Ensure virtual environment is running:
-  - ``` pipenv install ```
-  - ``` pipenv shell ```
-* Build docker image:
+* Build docker image in a terminal (ensuring you're in project folder):
   -  ``` docker build -t project1 . ```
 
 ![alt text](/docker_build_image.png)
@@ -47,11 +46,10 @@ After ensuring the model runs fine locally with flask, proceed to deploy the mod
 
 ![alt text](/docker.png)
 
-Having successfully run the above, activate another virtual environment for running the test file as follows:
+Having successfully run the above, open another terminal and run the test file as follows:
   - ``` python test.py ```
 
 ## Test model from already deployed cloud service via render
-* activate virtual environment
 * Run test file (test_render.py) for render containing 'code-defect-classifier.onrender.com' as host:
   - ``` python test_render.py ```
 
